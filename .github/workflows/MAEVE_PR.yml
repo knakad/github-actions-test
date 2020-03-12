@@ -33,9 +33,3 @@ jobs:
       run: |
         echo $GITHUB_WORKSPACE
         aws sts --region us-west-2 get-caller-identity
-        aws configure list
-        tail ~/.aws/*
-
-    # Runs a single command using the runners shell
-    - name: Test Notebooks
-      run: ./run-notebook-test.sh
