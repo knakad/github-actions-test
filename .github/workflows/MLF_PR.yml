@@ -28,4 +28,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Test Notebooks
-      run: run-notebook-test.sh
+      run: ./run-notebook-test.sh
