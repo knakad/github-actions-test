@@ -17,6 +17,5 @@ echo "set SAGEMAKER_ROLE_ARN=$SAGEMAKER_ROLE_ARN"
 ./runtime/bin/mead-run-nb-test \
 --instance-type ml.c4.8xlarge \
 --region us-west-2 \
---lifecycle-config-name install-python-sdk \
 --notebook-instance-role-arn $SAGEMAKER_ROLE_ARN \
 ./amazon-sagemaker-examples/sagemaker-python-sdk/pytorch_cnn_cifar10/pytorch_local_mode_cifar10.ipynb
