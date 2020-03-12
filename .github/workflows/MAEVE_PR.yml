@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: MLF PR Build
+name: MAEVE PR Build
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
@@ -33,7 +33,3 @@ jobs:
       run: |
         echo $GITHUB_WORKSPACE
         aws sts --region us-west-2 get-caller-identity
-
-    # Runs a single command using the runners shell
-    - name: Test Notebooks
-      run: ./run-notebook-test.sh
