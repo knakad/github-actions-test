@@ -24,7 +24,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo $GITHUB_WORKSPACE
-        echo test, and deploy your project.
+        aws sts --region us-west-2 get-caller-identity
 
     # Runs a single command using the runners shell
     - name: Test Notebooks

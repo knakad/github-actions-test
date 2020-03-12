@@ -5,8 +5,8 @@
 
 set -euo pipefail
 
-python setup.py sdist
-aws s3 --region us-west-2 cp ./dist/sagemaker-*.tar.gz s3://sagemaker-python-sdk-pr/sagemaker.tar.gz
+#python setup.py sdist
+#aws s3 --region us-west-2 cp ./dist/sagemaker-*.tar.gz s3://sagemaker-python-sdk-pr/sagemaker.tar.gz
 aws s3 cp s3://sagemaker-mead-cli/mead-nb-test.tar.gz mead-nb-test.tar.gz
 tar -xzf mead-nb-test.tar.gz
 git clone --depth 1 https://github.com/awslabs/amazon-sagemaker-examples.git
